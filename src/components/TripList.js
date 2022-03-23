@@ -4,7 +4,7 @@ import './TripList.css'
 
 export default function TripList() {
   const [url, setUrl] = useState('http://localhost:3000/trips')
-  const { data: trips, isLoading, error } = useFetch(url)
+  const { data: trips, isLoading, error } = useFetch(url, {name: 'Heather', jobTitle: "Full Stack Web Developer"})
   
   return (
     <div className="trip-list">
